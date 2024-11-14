@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+
+    {% block title %}  {% endblock %}
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alham Rugs" />
+    <meta name="author" content="Alham Rugs">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="{{ MEDIA_URL }}image/ico" href="favicon.ico" />
+    <link href="{% static 'style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700" rel="stylesheet">
+
+</head>
+
+<body>
+    {% block header %} {% endblock %}
+    {% block content%} {% endblock %}
+   
+   
+    
+
+    <div class="cd-cover-layer"></div>
+    <div id="magic-cursor">
+        <div id="ball">
+            <div id="ball-loader"></div>
+        </div>
+    </div>
+    <div id="rotate-device"></div>
+
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+
+
+{% block header %}
+
+<main>
+    <!-- Preloader -->
+    <div class="preloader-wrap">
+        <div class="outer">
+            <div class="inner">
+                <div class="percentage" id="precent"></div>
+            </div>
+        </div>
+    </div>
+    <!--/Preloader -->
+
+    <div class="cd-index cd-main-content">
+
+        <!-- Page Content -->
+        <div id="page-content" class="light-content">
+
+            <!-- Header -->
+            <header>
+                <div id="header-container">
+
+
+                    <!-- Logo -->
+                    <div id="logo" class="hide-ball">
+                        <a href="{% url 'home' %}">
+                            <img class="black-logo" src="{{logo.lightLogo.url}}" alt="Alham Rugs Logo">
+                            <img class="white-logo" src="{{logo.lightLogo.url}}" alt="Alham Rugs Logo">
+                        </a>
+                    </div>
+                    <!--/Logo -->
+
+                    <!-- Navigation -->
+                    <nav>
+                        <ul data-breakpoint="1025" class="flexnav">
+                            <li class="link"><a class="active link" href="{% url 'home' %}">Home</a>
+
+                            </li>
+                            <li class="link"><a class="link" href="{% url 'about' %}">About Us</a>
+
+                            </li>
+                        </li>
+                        <li class="link"><a class="link" href="{% url 'process' %}">Process</a>
+
+                        </li>
+                    </li>
+                    <li class="link"><a class="link" href="{% url 'manufactor' %}">manufactor</a>
+
+                    </li>
+                            <!-- <li class="link"><a class="ajax-link link" href="#">Collections</a>
+                                <ul>
+                                    <li><a class="link" href="#">Hand Knotted</a></li>
+                                    <li><a class="link" href="#">Hand Loom</a></li>
+                                    <li><a class="link" href="#">Hand Tufted</a></li>
+                                    <li><a class="link" href="#">Flatweave</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="link"><a class="link" href="#">Custom Rugs</a></li> -->
+
+                            <li class="link"><a class="link" href="{% url 'contact' %}">Contact Us</a></li>
+                            <!--<li class="link"><a class="link" target="_blank" href="https://themeforest.net/item/grenada-creative-ajax-portfolio-showcase-slider-template/22576532">Buy Now</a></li>            -->
+                        </ul>
+                    </nav>
+                    <!--/Navigation -->
+
+                    <!-- Menu Burger -->
+                    <div id="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!--/Menu Burger -->
+
+                </div>
+            </header>
+            |
+
+            {% endblock %}

@@ -1,0 +1,169 @@
+{% extends 'header.html' %}
+
+{% block title %} 
+<title>Welcome to Alham Rugs</title>
+{% endblock %}
+
+{% block content %}
+
+
+
+            <!--/Header -->        
+            
+            
+            <!-- Main -->
+            <div id="main">        
+                
+                <!-- Main Content -->
+                <div id="main-content" class="split-slider">
+                                
+                                
+                    <!-- Showcase Holder -->
+                    <div id="showcase-holder" class="disabled"> 
+                        <div id="showcase-slider" class="swiper-container">
+                            <div class="swiper-wrapper">
+                        
+                        
+                                <!-- Section Slide -->
+                                <div class="swiper-slide active" data-number="01" data-slide="1">                                    
+                                    <a  href="#">
+                                    	<div class="slide-title" data-number="01"><span>Mumtaz</span></div>                         
+                                    </a>           
+                                    <div class="slide-caption" data-slide-caption="1">Sets the style without taking too much space. Hand Loomed rug in tencel.</div>
+                                </div>
+                                <!--/Section Slide -->					
+                                
+                                
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-number="02" data-slide="2">
+                                    <a  href="#">
+                                    	<div class="slide-title" data-number="02"><span>Lines </span></div>               
+                                    </a>
+                                    <div class="slide-caption" data-slide-caption="2"> Embracing authenticity in aesthetics. Hand Knotted by love and affection.</div>                                    
+                                </div>
+                                <!--/Section Slide -->	
+                                
+                                
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-number="03" data-slide="3">
+                                    <a  href="#"> 
+                                    	<div class="slide-title" data-number="03"><span>Salama </span></div>
+                                    </a>
+                                   	<div class="slide-caption" data-slide-caption="3">Sine qua non of high art on the floor. Romance of warp and weft.</div>
+                                </div>
+                                <!--/Section Slide -->					
+                                
+                                
+                                <!-- Section Slide -->
+                                <div class="swiper-slide" data-number="04" data-slide="4">
+                                    <a  href="#"> 
+                                    	<div class="slide-title" data-number="04"><span>Earth </span></div>
+                                    </a>
+                                    <div class="slide-caption" data-slide-caption="4">Meticulously crafted in three different finishes - Hand carved, Invariable as well as Oxidized to offer a variety of choices to the customers.</div>
+                                </div>
+                                <!--/Section Slide -->
+                                
+                                
+                               <!-- Section Slide -->
+                                <div class="swiper-slide" data-number="05" data-slide="5">
+                                    <a  href="#"> 
+                                    	<div class="slide-title" data-number="05"><span>Tassel </span></div>
+                                    </a>
+                                    <div class="slide-caption" data-slide-caption="5"> Perfectly attuned to contemporary living. Flatwoven with extreme precision.</div>                                
+                                    
+                                </div>
+                                <!--/Section Slide -->
+                                
+                                
+                                <!-- Section Slide -->
+                       
+                            
+                        	 </div>             
+                        </div>
+                    </div>    
+                    <!-- Showcase Holder -->
+                    
+                    
+                    <!-- Showcase Gallery -->
+                    <div id="image-slider">
+                    	<div class="image-slider-wrapper">                
+                            <div class="slider-img" data-slide="1" data-src="{{images.slider1.url}}"></div>
+                            <div class="slider-img" data-slide="2" data-src="{{images.slider2.url}}"></div>
+                            <div class="slider-img" data-slide="3" data-src="{{images.slider3.url}}"></div>
+                            <div class="slider-img" data-slide="4" data-src="{{images.slider4.url}}"></div>
+                            <div class="slider-img" data-slide="5" data-src="{{images.slider5.url}}"></div>
+                                      
+                        </div>
+                    </div>
+                    <!--/Showcase Gallery -->
+                    
+                            
+                </div>
+                <!--/Main Content --> 
+				
+            </div>
+            <!--/Main --> 
+            
+            
+            <!-- Footer -->
+            {% include 'footer.html' %}
+            <!--/Footer -->
+           
+        </div>    
+		  <div class="vc_row row_padding_bottom">
+                            
+                            <div class="container has-animation" data-delay="100">
+                                 <div class="main-title "><br><br><center> <h2>THE CREATIVE KNOT'S STORY</H2></center></div>
+                                <!--<div class="main-subtitle">Next Project</div>-->
+								 <p style="text-align:center"><br>Explore the world of extraordinary premium hand knotted rugs and experience timeless craft. 
+Adding the romance back in this world of mass produce and creating carpets with a handwriting 
+like no other.</p>
+							</div>
+                                <!-- Collage -->
+                                <div class="vc_row row_padding_bottom" style="padding:94PX;">
+                                    
+                                    <!-- Collage item with pop-up -->
+                                   
+                                    
+                                    <!-- Collage item with pop-up -->
+                                    <div class=" one_half has-animation" data-delay="10">               
+                                        <a  href="{% url 'manufactor' %}">
+                                            <img src="{{images.image1.url}}" alt="img" />
+                                            <div class="thumb-info">WHAT WE DO</div>
+                                        </a>
+										</div>
+										
+                                    <!-- Collage item with pop-up -->
+                                    <div class="one_half has-animation last" style="padding-top:0px;" data-delay="20">                          
+                                        <a href="{% url 'about' %}">
+                                            <img src="{{images.image2.url}}" alt="img"  />
+                                            <div class="thumb-info">WHO WE ARE</div>
+                                        </a>
+                                    </div>
+									<br>
+                                     <div class="full has-animation"   data-delay="50">      
+									<div class="one_fourth"></div>
+									 <div class="one_half">
+										 <a  href="{% url 'process' %}">
+                                            <img src="{{images.image3.url}}" alt="img" width="50%" />
+                                            <div class="thumb-info">HOW WE DO</div>
+                                        </a>
+										</div>
+                                    </div>
+                                    
+                                    <!-- Collage item with pop-up -->
+                                   
+                                    
+                                    <!-- Collage item with pop-up -->
+                                  
+                                    
+                                </div>
+        <!--/Page Content -->
+    
+		</div>
+	</main>
+    
+    
+    
+    {% endblock %}
+ 

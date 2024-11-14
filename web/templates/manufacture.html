@@ -1,0 +1,175 @@
+{% extends 'header.html' %}
+
+
+
+{% block title %} 
+<title>Alham Rugs -What we made </title>
+{% endblock %}
+
+
+
+{% block content %}
+
+            
+            
+            <!-- Main -->
+            <div id="main">
+            
+            	<!-- Hero Section -->
+          
+                                  
+                <!--/Hero Section -->   
+                     
+                
+                <!-- Main Content -->
+                <div id="main-content">
+                	<div id="main-page-content">
+                     	
+                        <!-- Row -->
+                 
+                        <!--/Row -->
+                        
+                   
+                        <!--/Row -->
+						<div class="vc_row row_padding_bottom">
+                        
+                            <div class="container has-animation">
+							 <div class="main-title"><br><br><center> <span>MANUFACTURE</span></center></div>
+                                <!--<div class="main-subtitle">Next Project</div>-->
+								 <p style="text-align:center"><br>All our carpets benefit from the ancestral skills used by the craftspeople in our workshops located principally in northern India, according to the techniques of hand-knotted velvet carpets on vertical looms, hand-tufted on cotton canvas or hand-woven on horizontal looms.</p>
+							</div>
+							</div>
+						<!--   <div class="vc_row full">
+                        
+                            <div class="container">
+                           
+                                <figure class="has-animation" data-delay="50" >
+                                    <img src="images/hero-process.jpg" alt="Image Title">               
+                                    
+                                </figure>
+                            
+                            </div>
+                        
+                        </div>-->
+						<div class="vc_row row_padding_bottom">
+                        
+                            <div class="container">
+                            	  
+                                <div class="one_half" style=" color:#000000; text-align:center; ">
+                                <figure class="has-animation" data-delay="20"  >
+                                 <center> <h2  >HAND-KNOTTED</h2></center><div class="detail-content-text"><p >The traditional way of making velvet carpets has remained almost unchanged for centuries; the carpets are worked on vertical looms by skilled artisans.</p> 
+								 <p>The full-scale drawing on graph paper (each square represents a knot) is entirely marked out and coloured by hand, point by point.
+								 </p>
+								 <p>The knotter follows this drawing with the loom, knotting the appropriate strands of wool or viscose onto the warp threads to form a row of loops around a rod. These are packed down with a mallet and the loops are cut to create the velvet pile of the carpet.</p>
+								 <p>The carpet is then carefully hand-washed to enhance the softness and shine of the velvet pile, and finally left to dry.</p>
+								
+								 </figure>
+                                
+                                </div>
+                                
+                                <div class="one_half last">
+                                
+                                    <figure class="has-animation" data-delay="20" >
+                                     
+   										<img src="{{manufactordata.image1.url}}"/>
+                                    </figure>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+						
+						
+						<div class="vc_row row_padding_bottom">
+                        
+                            <div class="container">
+                            	  
+                                <div class="one_half" style=" color:#000000">
+                                <figure class="has-animation" data-delay="20"  >
+								 <img src="{{manufactordata.image2.url}}"/>
+                                </figure>
+                                
+                                </div>
+                                
+                                <div class="one_half last" style="text-align: center;>
+                                
+                                    <figure class="has-animation" data-delay="20" >
+                                      <center>  <h2  >HAND-TUFTED</h2></center><div class="detail-content-text"><p ">This craft process was introduced more recently; it is worked on cotton canvas on which the pattern has been drawn previously.</p> 
+									  <p>The artisan uses a 'tufting gun' to push strands of wool or viscose through the canvas with great accuracy, skillfully following the outline of the pattern.</p>
+								<p>In the case of sculptured carpets, the strands are tufted at maximum height and then carefully 'sculpted' by a carver using scissors.</p>
+								<p>The back of the carpet is then coated with latex to fix the strands and the backing is added.</p>
+								<p>The carpet is then finished off (brushed, sculptured, sheared to trim the surface level and edges overlocked).</p>
+									  
+                                    </figure>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+						
+						
+						<div class="vc_row row_padding_bottom">
+                        
+                            <div class="container">
+                            	  
+                                <div class="one_half" style=" color:#000000; text-align: center;" >
+                                <figure class="has-animation" data-delay="20"  >
+                                 <center>  <h2>HAND-WOVEN</h2></center><div class="detail-content-text"><p >The weave is identical to that in tapestry and is worked on horizontal looms.</p> 
+								 <p>The drawing is painted onto paper or canvas and positioned under the threads so it can be followed by the weavers.</p>
+								 <p>Several processes are grouped under this technique, such as hand loom weaving on mechanical looms to create simple geometric patterns and loom knotted/hardback weaving that enables carpets to be finished without a textile backing, for greater fineness and flexibility.</p>
+								 <p>All these weaving methods give widely diverse appearances and attractive effects.</p>
+								 </figure>
+                                
+                                </div>
+                                
+                                <div class="one_half last">
+                                
+                                    <figure class="has-animation" data-delay="20" >
+                                      <img src="{{manufactordata.image3.url}}"/>
+                                    </figure>
+                                
+                                </div>
+                            
+                            </div>
+                        
+                        </div>
+                    
+				
+						
+                    </div>
+                	<!--/Main Page Content --> 
+                    
+                    <!-- Project Navigation --> 
+                    <div id="project-nav">
+                        <div class="next-project-wrap">
+                            <div ></div>
+                            <a class="next-project-title next-ajax-link-project hide-ball " data-type="page-transition" href="project07.html">
+                              
+                            </a>
+                        </div>
+						
+                    </div>      
+                    <!--/Project Navigation -->
+                                        	
+                            
+                </div>
+                <!--/Main Content --> 
+            </div>
+            <!--/Main --> 
+            
+            
+            <!-- Footer -->
+            {% include 'footer.html' %}
+            <!--/Footer -->
+            
+            
+		</div>    
+        <!--/Page Content -->
+    
+		</div>
+	</main>
+    
+    
+    {% endblock %}

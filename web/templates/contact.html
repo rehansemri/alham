@@ -1,0 +1,108 @@
+{% extends 'header.html' %}
+
+
+{% block title %} 
+<title>Alham Rugs - Contact us </title>
+{% endblock %}
+
+
+{% block content %}
+
+
+            <!--/Header -->        
+              
+            
+            
+            <!-- Main -->
+            <div id="main">
+            
+            	<!-- Hero Section -->
+                <div id="hero" class="">
+                    <div id="hero-styles" class="parallax-onscroll">
+                        <div id="hero-caption" class="">
+                            <div class="inner">
+                                <h1 class="hero-title">Get in <span>Touch</span></h1> 
+                                <h2 class="hero-subtitle">For general enquiries {{contactdata.email}}</h2>
+                            </div>
+                        </div>                                            
+                    </div>
+                </div>                     
+                <!--/Hero Section -->   
+                     
+                
+                <!-- Main Content -->
+                <div id="main-content">
+                	<div id="main-page-content">
+                    
+                    
+                    
+                    
+                    <!-- Row -->
+                    <div class="vc_row row_padding_bottom">
+                        
+                        <div class="container">
+                            
+                            <div class="one_half has-animation" data-delay="150">
+                            	<div class="clapat-icon">
+                                    <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                                    <h6>{{contactdata.address}}</h6>
+                                	<p>Address</p> 
+                                </div>
+                                
+                                <div class="clapat-icon">
+                                    <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                                    <h6>{{contactdata.phone}}</h6>
+                                	<p>Phone</p>  
+                                </div>                                 
+                            </div>
+                            
+                            <div class="one_half last has-animation" data-delay="200">
+                                <!-- Contact Formular -->
+                                <div id="contact-formular">
+                                
+                                    <div id="message"></div>
+                                
+                                    <form method="post" action="#" name="contactform" id="contactform">                             
+                                        <div class="name-box">        
+                                            <input name="name" type="text" id="name" size="30"   onfocus="if(this.value == 'Full Name') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Full Name'; }" value="Full Name" ><label class="input_label"></label>
+                                        </div>                                                        
+                                        <div class="email-box">
+                                            <input name="email" type="text" id="email" size="30" onFocus="if(this.value == 'E-mail') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'E-mail'; }" value="E-mail" ><label class="input_label"></label>
+                                        </div>                            
+                                        <div class="message-box">
+                                            <textarea name="comments" cols="40" rows="4" id="comments" onFocus="if(this.value == 'Your Message') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Your Message'; }" >Your Message</textarea><label class="input_label slow"></label>
+                                        </div>                             
+                                         <div class="submit-box">             
+                                            <input type="submit" class="send_message clapat-button outline link" id="submit" value="Submit" /> 
+                                        </div>
+                                    </form>                        
+                                                            
+                                </div>
+                                <!--/Contact Formular -->
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <!--/Row -->
+					
+                    
+                    </div>
+                	<!--/Main Page Content -->
+                            
+                </div>
+                <!--/Main Content --> 
+            </div>
+            <!--/Main --> 
+            
+            
+            <!-- Footer -->
+            {% include 'footer.html' %}
+            <!--/Footer -->
+            
+        </div>    
+        <!--/Page Content -->
+    
+   		</div>
+	</main> 
+   {% endblock %}
